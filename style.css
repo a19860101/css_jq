@@ -1,51 +1,51 @@
-/* 區塊上下內距 */
-#about,#news,#products {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    
-}
-/* header */
-header {
-    background: url("https://picsum.photos/id/26/1900/1080") center center no-repeat fixed;
-    background-size: cover;
-}
-header .row {
-    height: 100vh;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 
 }
-/* abouit */
-#about {
-    
+body {
+    padding-top: 10%;
 }
-/* news */
-#news {
-    clip-path: polygon(0 12%, 100% 0, 100% 88%,0 100%);
-    background-color: #d4e2d4;
+a {
+    text-decoration: none;
+    color: #09daff;
 }
-.news-top {
-    margin-bottom: 30px;
+.container {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap:10px;
 }
-.news-top,.news-bottom,.news-heading {
+.box {
+    background-color: #fa0;
+    /* width: 100%; */
+    /* height: 100px; */
+}
+.title {
+    grid-column: span 4;
+    background-color: #fa0;
+    padding: 15px;
+}
+.item {
+    /* grid-column: span 5; */
+    background-color: #fa0;
+    display: grid;
+    place-items: center;
+    height: 100px;
     position: relative;
+    padding: 15px;
 }
-.news-caption {
-    display: table;
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0,0,0,.5);
-    text-align: right;
-    height: 100%;
-    width: calc(100% - 30px);
-    opacity: 0;
-    transition: .3s;
-}
-.news-item:hover .news-caption {
-    opacity: 1;
-}
-.news-caption-content {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    padding: 0 20%;
+span.date {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     color: #fff;
+    background-color: #000;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;  
 }

@@ -1,0 +1,66 @@
+/* 區塊上下內距 */
+#about,#news,#products,footer {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: -6vw;
+    
+}
+/* header */
+header {
+    background: url("https://picsum.photos/id/26/1900/1080") center center no-repeat fixed;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vw),0 100%);
+    margin-bottom: -6vw;
+}
+header .row {
+    height: calc(100vh + 6vw);
+
+}
+/* abouit */
+#about {
+    background-color: #fcf8e8;
+}
+/* news */
+#news {
+    clip-path: polygon(0 0, 100% 6vw, 100% calc(100% - 6vw),0 100%);
+    background-color: #d4e2d4;
+}
+.news-top {
+    margin-bottom: 30px;
+}
+.news-top,.news-bottom,.news-heading {
+    position: relative;
+}
+.news-caption {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    text-align: right;
+    height: 100%;
+    width: calc(100% - 30px);
+    opacity: 0;
+    transition: .3s;
+}
+.news-item:hover .news-caption {
+    opacity: 1;
+}
+.news-caption-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 20%;
+    color: #fff;
+}
+/* products */
+#products {
+    background-color: #fcf8e8;
+}
+/* footer */
+footer {
+    background-image: linear-gradient(to right bottom,#222,#333);
+    clip-path:polygon(0 0,100% 6vw,100% 100% ,0 100%)
+}
+footer a {
+    color: var(--light);
+}
