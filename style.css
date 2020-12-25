@@ -1,0 +1,51 @@
+/* 區塊上下內距 */
+#about,#news,#products {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    
+}
+/* header */
+header {
+    background: url("https://picsum.photos/id/26/1900/1080") center center no-repeat fixed;
+    background-size: cover;
+}
+header .row {
+    height: 100vh;
+
+}
+/* abouit */
+#about {
+    
+}
+/* news */
+#news {
+    clip-path: polygon(0 12%, 100% 0, 100% 88%,0 100%);
+    background-color: #d4e2d4;
+}
+.news-top {
+    margin-bottom: 30px;
+}
+.news-top,.news-bottom,.news-heading {
+    position: relative;
+}
+.news-caption {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    text-align: right;
+    height: 100%;
+    width: calc(100% - 30px);
+    opacity: 0;
+    transition: .3s;
+}
+.news-item:hover .news-caption {
+    opacity: 1;
+}
+.news-caption-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 20%;
+    color: #fff;
+}
